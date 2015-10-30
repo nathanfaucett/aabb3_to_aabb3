@@ -1,0 +1,36 @@
+{
+  "name": "aabb3_to_aabb3",
+  "version": "0.0.1",
+  "description": "aabb3 to aabb3 collision detection for the browser and node.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanfaucett/aabb3_to_aabb3.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm run test-node",
+    "test-node": "node ./test | ./node_modules/.bin/tap-spec",
+    "test-node-raw": "node ./test",
+    "test-browser-local": "zuul --local 8080 --ui tape -- ./test"
+  },
+  "keywords": [
+    "aabb3_to_aabb3",
+    "aabb3_to_aabb3.js"
+  ],
+  "author": "Nathan Faucett",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-jsbeautifier": "^0.2.10",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.2",
+    "zuul": "^3.7.2"
+  },
+  "dependencies": {
+    "contact3": "git://github.com/nathanfaucett/contact3.git",
+    "vec3": "git://github.com/nathanfaucett/vec3.git",
+    "mathf": "git://github.com/nathanfaucett/mathf.git"
+  }
+}
